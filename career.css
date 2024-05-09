@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins' sans-serif;
+}
+
+p{
+    font-family: 'Roboto' sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* media queries*/
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 601px){
+    body {
+        font-size: 16px;
+    }
+}
+
+
+/* utility classes */
+
+.container {
+    max-width: 1180px; 
+    margin-inline: auto;
+    padding-inline:5px ;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.hover-link {
+    color: #494949;
+    transition: 0.2s ease-out; 
+}
+.hover-link:hover{
+    color: #0062e4;
+}
+
+/* nav bar */
+
+.primary-button{
+    background-color: #0062e4;
+    font-weight: bolder;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;  
+    padding: 10px 10px;
+    transition: 0.2s ease-out;
+    margin-bottom: 10px;
+}
+.primary-button:hover{
+    background-color: #0056d2;
+}
+
+
+.main-nav{
+    margin-top: 35px;
+    justify-content:space-between;
+    
+}
+
+.company_logo img {
+    width: 300px;
+}
+
+.nav-links{
+    flex-basis: 730px;
+}
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;
+}
+
+/* header section */
+header{ 
+    padding: 0 5px 0;
+    background-color:#e5e7e8 ;
+}
+ .header-scetion { 
+    justify-content:center ;
+    gap: 50px;
+ }
+
+ .header-left { 
+    max-width: 40vw;
+ }
+ .header-left h1 { 
+    margin-top: 20px;
+    color:#333333;
+    font-size: 50px;
+ }
+ .get-started-btn {
+    margin-top: 20px;
+ }
+
+ .fa-solid  {
+    color: #0062e4;
+    gap: 20px;
+    padding: 8px;
+ }
+ .text{
+    font-size: 17px;
+    margin: 1px;
+ }
+
+ .header-right img {
+    width: 650px;
+ }
+
+ /* percentage section */
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    grid-gap: 30px;
+    background-color: #191919;
+    color: #e5e7e8;
+    border-radius: 10px;
+    height: 70%;
+    width: 80%;
+    justify-content: center;
+    padding: 40px;
+    margin: auto;
+}
+.box {
+    border: none;
+    border-right: 1px solid rgb(165, 162, 162);
+}
+
+.box-container .box h1 {
+    align-items: center;
+    height: 4px;
+    font-size: 30px;
+    font-weight: 8px;
+    
+}
+
+
+.box-container .box p{
+    text-align: center;
+}
+
+.box-container .box a{
+    color: #929599;
+    float: right;
+    gap: 10px;
+    margin-bottom:px;
+}
+
+/* company logo */
+
+.company-logo {
+    padding: 100px 0 0 0;
+}
+.logo{
+    display: flex;
+    
+    
+}
+
+.logo .list .logo-all{
+    padding: 5px 5px;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list li {
+    width: 33%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 18px;
+    text-align: center;
+}
+.list li img {
+    width: 80px;
+    
+}
+
+.comp-coursera {
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: -0.1px;
+    text-align: start;
+    color: #1f1f1f;
+    padding: 64px 63px 111px 63px;
+    
+}
+
+/* Upskill employees */
+
+/* .upskill{
+    background-color: #f5f7f8;
+    display: flex;
+    margin-top: 70px;
+} */
+.imgskill {
+    float: right;
+    box-shadow: none;
+    border-radius: 8px;
+    border: 3px solid white;
+    margin-left: 5px;
+    
+} 
+
+
+/* .uptext h3{
+    font-size: 20px;
+    padding-top: 80px;
+} */
+
+.uptext h1 {
+    font-size: 50px;
+    padding: 5px;
+    
+} 
